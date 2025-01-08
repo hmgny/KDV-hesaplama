@@ -8,7 +8,7 @@ public class Main {
         System.out.print("Ürün fiyatını giriniz : ");
         double fiyat = input.nextDouble();
 
-        double kdvOran = 0.18;
+        double kdvOran = (fiyat>1000) ? 0.08 : 0.18;
         double KDV = fiyat * kdvOran;
         double KDVli = fiyat + KDV;
 
